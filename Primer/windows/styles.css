@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+.border {
+  display: flexbox;
+  background-color: rgb(50, 50, 141);
+  padding: 10px;
+  margin-bottom: 10px;
+  color: rgb(237, 241, 241);
+  border-radius: 5px 5px 0px 0px;
+  border-image: linear-gradient(to right, rgb(218, 218, 237), darkorchid) 1;
+}
+.window {
+  margin: 200px;
+  background-color: gray;
+  border-radius: 8px;
+  overflow: hidden;
+  padding-bottom: 15px;
+  width: 500px;
+  border-color: blue;
+  border-width: 10px;
+}
+
+.main {
+  display: flexbox;
+}
+
+figure {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+button {
+  background-color: gray;
+  display: block;
+  margin-left: auto;
+  margin-right: 10%;
+  cursor: pointer;
+}
