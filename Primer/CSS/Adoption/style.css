@@ -46,7 +46,13 @@ nav ul li {
 #image-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  justify-items: start;
+  align-items: start;
+}
+
+#image-container figure img {
+  width: auto;
+  height: auto;
 }
 
 #getintouch {
@@ -65,4 +71,27 @@ button {
 
 footer {
   font-size: small;
+}
+@media only screen and (min-width: 720px) {
+  #image-container {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 600px;
+    grid-auto-flow: row;
+    /* justify-items: start;
+    align-items: start; */
+  }
+  #image-container figure img {
+    width: 300px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  #image-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: start;
+    align-items: start;
+  }
 }
